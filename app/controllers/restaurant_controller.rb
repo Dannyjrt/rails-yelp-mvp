@@ -1,6 +1,6 @@
 class RestaurantController < ApplicationController
 
-def _form
-  @restaurant = Restaurant.new
+def category
+  @restaurant = Restaurant.where(category: [:chinese, :italian, :japanese, :french, :belgian])
 end
 end
